@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WERC — Western Energy and Resources Club</title>
+
+<!-- ============================================================
+     EDIT: update these two lines with your real description + URL
+     ============================================================ -->
+<meta name="description" content="The Western Energy and Resources Club (WERC) connects Western University students to careers in energy, mining, commodities and sustainability through speakers, workshops, treks and competitions.">
+<link rel="canonical" href="https://werc-uwo.ca/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="WERC — Western Energy and Resources Club">
+<meta property="og:description" content="Connecting Western students to careers in energy, mining, commodities and sustainability.">
+<meta property="og:image" content="assets/favicon-512.png">
+<meta name="theme-color" content="#1D3422">
+
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32">
+<link rel="icon" href="assets/favicon-192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ================= HEADER / NAV ================= -->
+<header class="site-header" id="siteHeader">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top" aria-label="WERC home">
+      <img class="brand-mark mark-on-light" src="assets/werc-mark.png" alt="" width="40" height="40">
+      <img class="brand-mark mark-on-dark" src="assets/werc-mark-light.png" alt="" width="40" height="40">
+      <span class="brand-text">
+        <span class="brand-abbr">WERC</span>
+        <span class="brand-full">Western Energy &amp; Resources Club</span>
+      </span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Main">
+      <ul class="nav-list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#what-we-do">What We Do</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#sponsors">Sponsors</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a class="btn btn-primary nav-cta" href="#join">Join WERC</a>
+    </nav>
+
+    <div class="header-tools">
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="Switch to dark theme" aria-pressed="false">
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><g class="rays"><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9L17 7M7 17l-2.1 2.1"/></g></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg>
+      </button>
+      <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+        <span class="bars" aria-hidden="true"><i></i><i></i><i></i></span>
+      </button>
+    </div>
+  </div>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+</header>
+
+<main id="main">
+<span id="top"></span>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true">
+    <svg class="ridges" viewBox="0 0 1440 620" preserveAspectRatio="xMidYMax slice">
+      <path class="ridge r1" d="M-40 560 C 240 470 460 300 720 300 C 980 300 1200 470 1480 560 L1480 640 L-40 640 Z"/>
+      <path class="ridge r2" d="M-40 600 C 260 520 470 370 720 370 C 970 370 1180 520 1480 600 L1480 660 L-40 660 Z"/>
+      <path class="ridge r3" d="M-40 640 C 280 575 480 445 720 445 C 960 445 1160 575 1480 640 L1480 700 L-40 700 Z"/>
+    </svg>
+    <div class="hero-grid"></div>
+    <div class="hero-glow"></div>
+  </div>
+
+  <div class="wrap hero-inner">
+    <p class="eyebrow reveal">Western University</p>
+    <h1 class="hero-title reveal" data-delay="1">
+      The student club for <em>energy</em> and <em>resource</em> at Western.
+    </h1>
+    <p class="hero-lede reveal" data-delay="2">
+      Do you love energy and resources? Perfect! Not sure? Also perfect! 
+      WERC is for students from all educational backgrounds 
+      who are curious about how energy and raw materials get financed, produced, 
+      traded and regulated.
+    </p>
+    <div class="hero-actions reveal" data-delay="3">
+      <a class="btn btn-primary btn-lg" href="#join">Become a member</a>
+      <a class="btn btn-ghost btn-lg" href="#events">See upcoming events <span aria-hidden="true">→</span></a>
+    </div>
+
+    <ul class="stats reveal" data-delay="4">
+      <!-- EDIT: replace with your real numbers -->
+      <li><span class="stat-num" data-count="1000000" data-suffix="+">0</span><span class="stat-label">Active members</span></li>
+      <li><span class="stat-num" data-count="20" data-suffix="+">0</span><span class="stat-label">Events per year</span></li>
+      <li><span class="stat-num" data-count="45" data-suffix="+">0</span><span class="stat-label">Industry &amp; alumni partners</span></li>
+      <li><span class="stat-num" data-count="5" data-suffix="">0</span><span class="stat-label">Faculties represented</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="section" id="about">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow reveal">01 &mdash; About</p>
+      <h2 class="reveal" data-delay="1">Resources move the world. We make sure Western students understand how.</h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-copy reveal" data-delay="2">
+        <p class="lead">
+          The Western Energy and Resources Club is a student-run organization for anyone curious about
+          how energy and raw materials get financed, produced, traded and regulated — and about the
+          careers that sit behind those decisions.
+        </p>
+        <p>
+          We are deliberately cross-faculty. A geology student who can read a resource estimate, an Ivey
+          student who can build the NAV model, and an engineering student who understands the process
+          flowsheet each see a different part of the same asset. WERC puts them in the same room.
+        </p>
+        <p>
+          No prior experience is expected. Most of our members join knowing only that the sector is
+          interesting; they leave with a working vocabulary, a few mentors, and something concrete on
+          their résumé.
+        </p>
+        <ul class="tick-list">
+          <li>Open to every faculty and every year, undergraduate and graduate</li>
+          <li>No application or interview to become a general member</li>
+          <li>Executive and analyst roles recruited each spring</li>
+        </ul>
+      </div>
+
+      <aside class="about-card reveal" data-delay="3">
+        <h3>Our focus areas</h3>
+        <ul class="pillars">
+          <li>
+            <span class="pillar-index">01</span>
+            <h4>Energy &amp; Power</h4>
+            <p>Oil and gas, nuclear, renewables, utilities and the power markets that tie them together.</p>
+          </li>
+          <li>
+            <span class="pillar-index">02</span>
+            <h4>Mining &amp; Metals</h4>
+            <p>Exploration through production, with a focus on the critical minerals behind electrification.</p>
+          </li>
+          <li>
+            <span class="pillar-index">03</span>
+            <h4>Commodities &amp; Capital Markets</h4>
+            <p>Trading, equity research, project finance and how resource assets are actually valued.</p>
+          </li>
+          <li>
+            <span class="pillar-index">04</span>
+            <h4>Sustainability &amp; Policy</h4>
+            <p>Decarbonization, ESG reporting, Indigenous partnership and the regulation shaping all of it.</p>
+          </li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHAT WE DO ================= -->
+<section class="section section-alt" id="what-we-do">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow reveal">02 &mdash; What we do</p>
+      <h2 class="reveal" data-delay="1">Six programs, one goal: get you in the room.</h2>
+      <p class="section-sub reveal" data-delay="2">
+        Everything we run is designed to be useful whether you are exploring the sector for the first
+        time or already recruiting for it.
+      </p>
+    </div>
+
+    <div class="cards">
+      <article class="card reveal">
+        <div class="card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M4 19h16M7 19V9m5 10V5m5 14v-7"/></svg>
+        </div>
+        <h3>Speaker Series</h3>
+        <p>Monthly sessions with operators, analysts, traders and policymakers. Small rooms, real questions, no sales pitch.</p>
+      </article>
+
+      <article class="card reveal" data-delay="1">
+        <div class="card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="15" rx="2"/><path d="M3 9h18M8 13h3m3 0h3"/></svg>
+        </div>
+        <h3>Technical Workshops</h3>
+        <p>Hands-on skills: building a mining asset NAV, reading a technical report, modelling a power purchase agreement.</p>
+      </article>
+
+      <article class="card reveal" data-delay="2">
+        <div class="card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 3l2.6 5.6 6.1.8-4.5 4.2 1.2 6L12 16.8 6.6 19.6l1.2-6L3.3 9.4l6.1-.8z"/></svg>
+        </div>
+        <h3>Pitch &amp; Case Competitions</h3>
+        <p>Our flagship commodity pitch competition, plus delegations to external energy and mining cases.</p>
+      </article>
+
+      <article class="card reveal" data-delay="3">
+        <div class="card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M3 20l6-16 6 16M9 4l12 16"/><circle cx="6" cy="20" r="1.4"/></svg>
+        </div>
+        <h3>Treks &amp; Site Visits</h3>
+        <p>Toronto treks to energy and mining desks, and day trips to generating stations, mines and processing facilities.</p>
+      </article>
+
+      <article class="card reveal" data-delay="4">
+        <div class="card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><path d="M16 5.5a3.2 3.2 0 0 1 0 6.4M18 20c0-2.2-.9-4.1-2.3-5.3"/></svg>
+        </div>
+        <h3>Mentorship Program</h3>
+        <p>Members are paired with Western alumni working in the sector for a term of one-on-one guidance.</p>
+      </article>
+
+      <article class="card reveal" data-delay="5">
+        <div class="card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h10M4 17h7"/><circle cx="18" cy="16" r="3"/><path d="M20.5 18.5L22.5 20.5"/></svg>
+        </div>
+        <h3>Recruiting Support</h3>
+        <p>Résumé reviews, mock interviews and a shared board of sector internships, co-ops and new-grad roles.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EVENTS ================= -->
+<section class="section" id="events">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow reveal">03 &mdash; Events</p>
+      <h2 class="reveal" data-delay="1">What&rsquo;s on this term</h2>
+      <p class="section-sub reveal" data-delay="2">
+        Members get first access and discounted tickets. Everything below is open to all Western students
+        unless noted.
+      </p>
+    </div>
+
+    <div class="filter-bar reveal" data-delay="2" role="tablist" aria-label="Filter events">
+      <button class="filter is-active" role="tab" aria-selected="true" data-filter="upcoming">Upcoming</button>
+      <button class="filter" role="tab" aria-selected="false" data-filter="past">Past</button>
+      <button class="filter" role="tab" aria-selected="false" data-filter="all">All</button>
+    </div>
+
+    <!-- ============================================================
+         EDIT: each <li> below is one event.
+         Copy a block, change the date / title / text, and set
+         data-state to "upcoming" or "past".
+         ============================================================ -->
+    <ul class="event-list" id="eventList">
+      <li class="event" data-state="upcoming">
+        <div class="event-date"><span class="month">Sep</span><span class="day">30</span><span class="year">2026</span></div>
+        <div class="event-body">
+          <div class="event-tags"><span class="tag tag-social">Social</span><span class="tag">Free</span></div>
+          <h3>Fall Kickoff &amp; Club Night</h3>
+          <p>Meet the 2026&ndash;27 executive, hear what we have planned, and find out which of our programs fits you. Pizza, name tags, zero pressure.</p>
+          <p class="event-meta">6:30&ndash;8:30 PM &middot; Social Science Centre 2050</p>
+        </div>
+        <div class="event-action"><a class="btn btn-sm btn-primary" href="#join">RSVP</a></div>
+      </li>
+
+      <li class="event" data-state="upcoming">
+        <div class="event-date"><span class="month">Oct</span><span class="day">08</span><span class="year">2026</span></div>
+        <div class="event-body">
+          <div class="event-tags"><span class="tag tag-speaker">Speaker</span><span class="tag">Mining</span></div>
+          <h3>Speaker Series: Inside Canada&rsquo;s Critical Minerals Push</h3>
+          <p>A VP of Corporate Development at a mid-cap producer walks through how a lithium project actually gets permitted, financed and built — and where the timelines really slip.</p>
+          <p class="event-meta">5:00&ndash;6:30 PM &middot; Ivey Building, Room 1350</p>
+        </div>
+        <div class="event-action"><a class="btn btn-sm btn-primary" href="#join">Register</a></div>
+      </li>
+
+      <li class="event" data-state="upcoming">
+        <div class="event-date"><span class="month">Oct</span><span class="day">22</span><span class="year">2026</span></div>
+        <div class="event-body">
+          <div class="event-tags"><span class="tag tag-workshop">Workshop</span><span class="tag">Members only</span></div>
+          <h3>Building a Mining Asset Model in Excel</h3>
+          <p>Two hours, one spreadsheet, from tonnes and grade to a net asset value per share. Bring a laptop; we supply the template and the data.</p>
+          <p class="event-meta">3:00&ndash;5:00 PM &middot; Weldon Library, Learning Lab</p>
+        </div>
+        <div class="event-action"><a class="btn btn-sm btn-primary" href="#join">Register</a></div>
+      </li>
+
+      <li class="event" data-state="upcoming">
+        <div class="event-date"><span class="month">Nov</span><span class="day">05</span><span class="year">2026</span></div>
+        <div class="event-body">
+          <div class="event-tags"><span class="tag tag-trek">Trek</span><span class="tag">Application</span></div>
+          <h3>Toronto Energy &amp; Mining Trek</h3>
+          <p>Two days of office visits across Bay Street — an energy trading desk, a mining equity research team, and a project finance group — ending with an alumni reception.</p>
+          <p class="event-meta">Nov 5&ndash;6 &middot; Toronto, ON &middot; 24 spots, applications close Oct 17</p>
+        </div>
+        <div class="event-action"><a class="btn btn-sm btn-primary" href="#join">Apply</a></div>
+      </li>
+
+      <li class="event" data-state="upcoming">
+        <div class="event-date"><span class="month">Nov</span><span class="day">19</span><span class="year">2026</span></div>
+        <div class="event-body">
+          <div class="event-tags"><span class="tag tag-comp">Competition</span><span class="tag">Prizes</span></div>
+          <h3>WERC Commodity Pitch Competition &mdash; Finals</h3>
+          <p>Teams of three pitch a long or short on a single commodity or resource equity to a panel of industry judges. Twelve minutes, ten slides, real questions.</p>
+          <p class="event-meta">1:00&ndash;6:00 PM &middot; Ivey Building &middot; $1,500 prize pool</p>
+        </div>
+        <div class="event-action"><a class="btn btn-sm btn-primary" href="#join">Form a team</a></div>
+      </li>
+
+      <li class="event" data-state="past">
+        <div class="event-date"><span class="month">Mar</span><span class="day">12</span><span class="year">2026</span></div>
+        <div class="event-body">
+          <div class="event-tags"><span class="tag tag-speaker">Panel</span><span class="tag">ESG</span></div>
+          <h3>ESG in Practice: Beyond the Report</h3>
+          <p>Three practitioners on what sustainability teams actually do once the disclosure is filed — and how much of it changes an operating decision.</p>
+          <p class="event-meta">Recap and slides available to members</p>
+        </div>
+        <div class="event-action"><span class="event-done">Completed</span></div>
+      </li>
+
+      <li class="event" data-state="past">
+        <div class="event-date"><span class="month">Feb</span><span class="day">05</span><span class="year">2026</span></div>
+        <div class="event-body">
+          <div class="event-tags"><span class="tag tag-speaker">Speaker</span><span class="tag">Nuclear</span></div>
+          <h3>Nuclear&rsquo;s Second Act in Ontario</h3>
+          <p>An engineer-turned-project-director on refurbishment economics, small modular reactors, and why Ontario&rsquo;s grid looks the way it does.</p>
+          <p class="event-meta">92 attendees</p>
+        </div>
+        <div class="event-action"><span class="event-done">Completed</span></div>
+      </li>
+
+      <li class="event" data-state="past">
+        <div class="event-date"><span class="month">Nov</span><span class="day">20</span><span class="year">2025</span></div>
+        <div class="event-body">
+          <div class="event-tags"><span class="tag tag-comp">Competition</span></div>
+          <h3>Inaugural Commodity Pitch Competition</h3>
+          <p>Our first pitch competition: 14 teams, 4 judges, and a winning short on thermal coal that held up better than the room expected.</p>
+          <p class="event-meta">Winners: Team Placeholder &mdash; see recap</p>
+        </div>
+        <div class="event-action"><span class="event-done">Completed</span></div>
+      </li>
+    </ul>
+
+    <p class="event-empty" id="eventEmpty" hidden>No events in this view yet — check back soon.</p>
+  </div>
+</section>
+
+<!-- ================= TEAM ================= -->
+<section class="section section-alt" id="team">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow reveal">04 &mdash; Team</p>
+      <h2 class="reveal" data-delay="1">The 2026&ndash;27 executive</h2>
+      <p class="section-sub reveal" data-delay="2">
+        Eight students across Ivey, Science, Engineering and Social Science.
+        Questions about a portfolio? Email the person who owns it.
+      </p>
+    </div>
+
+    <!-- ============================================================
+         This is where to edit team profiles
+         ============================================================ -->
+    <div class="team-grid">
+      <article class="member reveal">
+        <span class="avatar" data-initials="SC" aria-hidden="true"></span>
+        <h3>Sean Conway</h3>
+        <p class="role">Our Handsome President</p>
+        <p class="program">Ivey HBA & Philosophy</p>
+        <a class="member-mail" href="mailto:needToFill.ca">needToFill.ca</a>
+      </article>
+
+      <article class="member reveal" data-delay="1">
+        <span class="avatar" data-initials="JP" aria-hidden="true"></span>
+        <h3>Jordan Patel</h3>
+        <p class="role">VP Finance</p>
+        <p class="program">BMOS &rsquo;27, Finance</p>
+        <a class="member-mail" href="mailto:finance@werc-uwo.ca">finance@werc-uwo.ca</a>
+      </article>
+
+      <article class="member reveal" data-delay="2">
+        <span class="avatar" data-initials="MO" aria-hidden="true"></span>
+        <h3>Maya Okonkwo</h3>
+        <p class="role">VP Corporate Relations</p>
+        <p class="program">HBA &rsquo;28, Ivey Business School</p>
+        <a class="member-mail" href="mailto:partnerships@werc-uwo.ca">partnerships@werc-uwo.ca</a>
+      </article>
+
+      <article class="member reveal" data-delay="3">
+        <span class="avatar" data-initials="LT" aria-hidden="true"></span>
+        <h3>Liam Tremblay</h3>
+        <p class="role">VP Events</p>
+        <p class="program">BESc &rsquo;27, Chemical Engineering</p>
+        <a class="member-mail" href="mailto:events@werc-uwo.ca">events@werc-uwo.ca</a>
+      </article>
+
+      <article class="member reveal" data-delay="4">
+        <span class="avatar" data-initials="MC" aria-hidden="true"></span>
+        <h3>Matteo Carlucci</h3>
+        <p class="role">Head of Technology</p>
+        <p class="program">Ivey HBA & Software Engineering</p>
+        <a class="member-mail" href="mailto:education@werc-uwo.ca">education@werc-uwo.ca</a>
+      </article>
+
+      <article class="member reveal" data-delay="5">
+        <span class="avatar" data-initials="LW" aria-hidden="true"></span>
+        <h3>Luke Worden</h3>
+        <p class="role">Head of Consulting</p>
+        <p class="program">Ivey HBA & Communications</p>
+        <a class="member-mail" href="mailto:marketing@werc-uwo.ca">marketing@werc-uwo.ca</a>
+      </article>
+
+      <article class="member reveal" data-delay="6">
+        <span class="avatar" data-initials="ZT" aria-hidden="true"></span>
+        <h3>Zach Theodore</h3>
+        <p class="role">Head of Consulting</p>
+        <p class="program">Ivey HBA & Biology</p>
+        <a class="member-mail" href="mailto:tech@werc-uwo.ca">tech@werc-uwo.ca</a>
+      </article>
+
+      <article class="member reveal" data-delay="7">
+        <span class="avatar" data-initials="EZ" aria-hidden="true"></span>
+        <h3>Eric Zielonka</h3>
+        <p class="role">Head of External Relations</p>
+        <p class="program">BMOS Finance</p>
+        <a class="member-mail" href="mailto:sustainability@werc-uwo.ca">sustainability@werc-uwo.ca</a>
+      </article>
+    </div>
+
+    <div class="team-note reveal">
+      <p><strong>Executive applications open each March.</strong> Analyst and first-year representative
+      positions are posted in September. Watch our Instagram or join the mailing list below.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SPONSORS ================= -->
+<section class="section" id="sponsors">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow reveal">05 &mdash; Sponsors</p>
+      <h2 class="reveal" data-delay="1">Partner with WERC</h2>
+      <p class="section-sub reveal" data-delay="2">
+        Sponsorship keeps our events free or near-free for students, and funds the treks and competitions
+        that do the most for member outcomes.
+      </p>
+    </div>
+
+    <!-- ============================================================
+         EDIT: replace each placeholder tile with a sponsor logo:
+         <a class="sponsor-tile" href="https://sponsor.com">
+           <img src="assets/sponsors/name.svg" alt="Sponsor name">
+         </a>
+         ============================================================ -->
+    <div class="sponsor-tier reveal" data-delay="2">
+      <h3 class="tier-label">Lead partners</h3>
+      <div class="sponsor-grid tier-lead">
+        <div class="sponsor-tile is-empty"><span>Sponsor logo</span></div>
+        <div class="sponsor-tile is-empty"><span>Sponsor logo</span></div>
+        <div class="sponsor-tile is-empty"><span>Sponsor logo</span></div>
+      </div>
+    </div>
+
+    <div class="sponsor-tier reveal" data-delay="3">
+      <h3 class="tier-label">Supporting partners</h3>
+      <div class="sponsor-grid">
+        <div class="sponsor-tile is-empty"><span>Sponsor logo</span></div>
+        <div class="sponsor-tile is-empty"><span>Sponsor logo</span></div>
+        <div class="sponsor-tile is-empty"><span>Sponsor logo</span></div>
+        <div class="sponsor-tile is-empty"><span>Sponsor logo</span></div>
+        <div class="sponsor-tile is-empty"><span>Sponsor logo</span></div>
+        <div class="sponsor-tile is-empty"><span>Sponsor logo</span></div>
+      </div>
+    </div>
+
+    <div class="sponsor-cta reveal" data-delay="3">
+      <div class="sponsor-cta-copy">
+        <h3>What partners get</h3>
+        <ul class="tick-list">
+          <li>Direct access to a pre-screened, sector-focused talent pool across five faculties</li>
+          <li>Named sponsorship of a workshop, trek or the pitch competition</li>
+          <li>Logo placement here, on event material and in our termly member newsletter</li>
+          <li>First look at our résumé book, shared with partners each October and January</li>
+        </ul>
+      </div>
+      <div class="sponsor-cta-action">
+        <p>Packages start at $500. We are happy to build something that fits a smaller budget or an
+          in-kind contribution.</p>
+        <!-- EDIT: replace with your real partnerships email -->
+        <a class="btn btn-primary btn-lg" href="mailto:partnerships@werc-uwo.ca?subject=WERC%20sponsorship%20inquiry">Request the package</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= JOIN ================= -->
+<section class="section section-dark" id="join">
+  <div class="wrap join-wrap">
+    <div class="join-copy">
+      <p class="eyebrow reveal">06 &mdash; Join</p>
+      <h2 class="reveal" data-delay="1">Membership is $15 for the year.</h2>
+      <p class="section-sub reveal" data-delay="2">
+        That covers every workshop, priority registration for treks and competitions, the mentorship
+        program, and the internship board. General membership has no application.
+      </p>
+
+      <ol class="steps reveal" data-delay="3">
+        <li>
+          <h3>Fill in the form</h3>
+          <p>Tell us your faculty, year and which focus areas interest you so we can point you at the right programs.</p>
+        </li>
+        <li>
+          <h3>Pay the $15 dues</h3>
+          <p>Interac e-transfer or in person at any event. Bursary spots are available — just ask, no questions.</p>
+        </li>
+        <li>
+          <h3>Come to one thing</h3>
+          <p>You will be added to the mailing list and member group chat. Show up to whatever looks interesting.</p>
+        </li>
+      </ol>
+    </div>
+
+    <!-- ============================================================
+         EDIT: this form does nothing until you connect it.
+         Easiest options:
+           1. Google Form  — delete this <form> and paste the embed code
+           2. Formspree    — set action="https://formspree.io/f/YOURID"
+                             and method="POST", then delete data-mailto
+         As shipped it opens the visitor's email client (data-mailto).
+         ============================================================ -->
+    <form class="join-form reveal" data-delay="2" id="joinForm" data-mailto="members@werc-uwo.ca" novalidate>
+      <h3>Member sign-up</h3>
+
+      <div class="field">
+        <label for="f-name">Full name</label>
+        <input id="f-name" name="name" type="text" autocomplete="name" required>
+      </div>
+
+      <div class="field">
+        <label for="f-email">Western email</label>
+        <input id="f-email" name="email" type="email" placeholder="you@uwo.ca" autocomplete="email" required>
+      </div>
+
+      <div class="field-row">
+        <div class="field">
+          <label for="f-faculty">Faculty</label>
+          <select id="f-faculty" name="faculty" required>
+            <option value="">Select…</option>
+            <option>Ivey Business School</option>
+            <option>Social Science</option>
+            <option>Science</option>
+            <option>Engineering</option>
+            <option>Arts &amp; Humanities</option>
+            <option>Health Sciences</option>
+            <option>Law</option>
+            <option>Graduate studies</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="f-year">Year</label>
+          <select id="f-year" name="year" required>
+            <option value="">Select…</option>
+            <option>First</option>
+            <option>Second</option>
+            <option>Third</option>
+            <option>Fourth</option>
+            <option>Fifth+</option>
+            <option>Graduate</option>
+          </select>
+        </div>
+      </div>
+
+      <fieldset class="field">
+        <legend>Interests <span class="hint">(pick any)</span></legend>
+        <div class="chips">
+          <label class="chip"><input type="checkbox" name="interest" value="Energy &amp; Power"><span>Energy &amp; Power</span></label>
+          <label class="chip"><input type="checkbox" name="interest" value="Mining &amp; Metals"><span>Mining &amp; Metals</span></label>
+          <label class="chip"><input type="checkbox" name="interest" value="Commodities &amp; Markets"><span>Commodities &amp; Markets</span></label>
+          <label class="chip"><input type="checkbox" name="interest" value="Sustainability &amp; Policy"><span>Sustainability &amp; Policy</span></label>
+        </div>
+      </fieldset>
+
+      <button class="btn btn-lime btn-lg btn-block" type="submit">Send sign-up</button>
+      <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      <p class="form-fineprint">We use your email for club announcements only, and you can unsubscribe from any of them.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="section" id="contact">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow reveal">07 &mdash; Contact</p>
+      <h2 class="reveal" data-delay="1">Get in touch</h2>
+    </div>
+
+    <!-- EDIT: replace every handle, email and link below -->
+    <div class="contact-grid">
+      <a class="contact-card reveal" href="mailto:hello@werc-uwo.ca">
+        <span class="contact-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5 12 13l8.5-6.5"/></svg>
+        </span>
+        <h3>Email</h3>
+        <p>hello@werc-uwo.ca</p>
+        <span class="contact-go">General enquiries <span aria-hidden="true">→</span></span>
+      </a>
+
+      <a class="contact-card reveal" data-delay="1" href="https://instagram.com/" target="_blank" rel="noopener">
+        <span class="contact-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="1.2" fill="currentColor" stroke="none"/></svg>
+        </span>
+        <h3>Instagram</h3>
+        <p>@werc.uwo</p>
+        <span class="contact-go">Event updates <span aria-hidden="true">→</span></span>
+      </a>
+
+      <a class="contact-card reveal" data-delay="2" href="https://linkedin.com/" target="_blank" rel="noopener">
+        <span class="contact-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="3"/><path d="M7.5 10.5V17M7.5 7.6v.1M11.5 17v-3.6a2.4 2.4 0 0 1 4.8 0V17"/></svg>
+        </span>
+        <h3>LinkedIn</h3>
+        <p>Western Energy &amp; Resources Club</p>
+        <span class="contact-go">Alumni &amp; partners <span aria-hidden="true">→</span></span>
+      </a>
+
+      <div class="contact-card is-static reveal" data-delay="3">
+        <span class="contact-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+        </span>
+        <h3>Find us</h3>
+        <p>Western University<br>1151 Richmond St, London, ON</p>
+        <span class="contact-go">Office hours each term</span>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <img src="assets/werc-logo-light.png" alt="WERC" width="96" height="96">
+      <p>Western Energy and Resources Club — a student-run club at Western University connecting
+        students to careers in energy, mining, commodities and sustainability.</p>
+    </div>
+
+    <nav class="footer-nav" aria-label="Footer">
+      <div>
+        <h4>Club</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#what-we-do">What we do</a></li>
+          <li><a href="#team">Executive team</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get involved</h4>
+        <ul>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#join">Become a member</a></li>
+          <li><a href="#sponsors">Sponsor us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="mailto:hello@werc-uwo.ca">hello@werc-uwo.ca</a></li>
+          <li><a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div class="wrap footer-base">
+    <!-- EDIT: confirm this wording with the USC before publishing -->
+    <p>&copy; <span id="year">2026</span> Western Energy and Resources Club. A student-run club at Western University.</p>
+    <p class="footer-ack">Western University is located on the traditional territories of the Anishinaabek,
+      Haudenosaunee, Lūnaapéewak and Attawandaron peoples.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
