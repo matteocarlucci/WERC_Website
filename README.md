@@ -61,7 +61,8 @@ Each event is one `<li>` in the `#events` list. Copy an existing block and chang
 ```html
 <li class="event" data-state="upcoming">
   <div class="event-date">
-    <span class="month">Jan</span><span class="day">14</span><span class="year">2027</span>
+    <span class="month">Jan</span><span class="day">14</span
+    ><span class="year">2027</span>
   </div>
   <div class="event-body">
     <div class="event-tags">
@@ -92,7 +93,9 @@ Each event is one `<li>` in the `#events` list. Copy an existing block and chang
   <h3>Alex Bianchi</h3>
   <p class="role">VP Finance</p>
   <p class="program">HBA '28, Ivey Business School</p>
-  <a class="member-mail" href="mailto:finance@werc-uwo.ca">finance@werc-uwo.ca</a>
+  <a class="member-mail" href="mailto:finance@werc-uwo.ca"
+    >finance@werc-uwo.ca</a
+  >
 </article>
 ```
 
@@ -100,7 +103,7 @@ To use a real photo instead of the initials circle, replace the `<span class="av
 with an image — the styling is identical:
 
 ```html
-<img class="avatar" src="assets/team/alex.jpg" alt="">
+<img class="avatar" src="assets/team/alex.jpg" alt="" />
 ```
 
 Square crops around 300×300 px work best. Put them in `assets/team/`.
@@ -114,8 +117,13 @@ Replace a placeholder tile:
 <div class="sponsor-tile is-empty"><span>Sponsor logo</span></div>
 
 <!-- after -->
-<a class="sponsor-tile" href="https://sponsor.com" target="_blank" rel="noopener">
-  <img src="assets/sponsors/sponsor-name.svg" alt="Sponsor Name">
+<a
+  class="sponsor-tile"
+  href="https://sponsor.com"
+  target="_blank"
+  rel="noopener"
+>
+  <img src="assets/sponsors/sponsor-name.svg" alt="Sponsor Name" />
 </a>
 ```
 
@@ -153,8 +161,12 @@ Responses land in a Google Sheet. You lose the custom styling.
 2. Change the opening tag in `index.html` to:
 
 ```html
-<form class="join-form reveal" id="joinForm"
-      action="https://formspree.io/f/YOUR_ID" method="POST">
+<form
+  class="join-form reveal"
+  id="joinForm"
+  action="https://formspree.io/f/YOUR_ID"
+  method="POST"
+></form>
 ```
 
 3. Delete the `data-mailto="…"` attribute.
@@ -172,7 +184,7 @@ in `localStorage`. To force one theme permanently, set it on the `<html>` tag an
 the toggle button:
 
 ```html
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="light"></html>
 ```
 
 ## Brand colours
