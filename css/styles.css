@@ -684,15 +684,6 @@ img.avatar::before { content: none; }
 }
 .member-mail:hover { color: var(--ink); border-color: var(--sage-500); }
 
-.team-note {
-  margin-top: 26px;
-  padding: 20px 24px;
-  border-left: 3px solid var(--lime-500);
-  background: var(--surface);
-  border-radius: 0 var(--r-md) var(--r-md) 0;
-  font-size: .96rem;
-  color: var(--ink-2);
-}
 
 /* ---------- 12. SPONSORS ---------- */
 .sponsor-tier { margin-bottom: 34px; }
@@ -731,21 +722,6 @@ img.avatar::before { content: none; }
   letter-spacing: .04em;
 }
 
-.sponsor-cta {
-  display: grid;
-  grid-template-columns: 1.3fr 1fr;
-  gap: clamp(24px, 4vw, 48px);
-  align-items: center;
-  margin-top: 44px;
-  padding: clamp(26px, 4vw, 42px);
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: var(--r-xl);
-  box-shadow: var(--shadow-md);
-}
-.sponsor-cta h3 { font-size: 1.4rem; }
-.sponsor-cta-action p { font-size: .94rem; color: var(--muted); margin-bottom: 18px; }
-
 /* ---------- 14. CONTACT ---------- */
 .contact-grid {
   display: grid;
@@ -781,17 +757,6 @@ img.avatar::before { content: none; }
 .contact-icon svg { width: 21px; height: 21px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
 .contact-card h3 { font-size: 1.02rem; }
 .contact-card > p { margin: 6px 0 0; font-size: .94rem; color: var(--ink-2); }
-.contact-go {
-  margin-top: auto;
-  padding-top: 18px;
-  font-size: .8rem;
-  font-weight: 600;
-  letter-spacing: .03em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-.contact-card:not(.is-static):hover .contact-go { color: var(--sage-600); }
-:root[data-theme="dark"] .contact-card:not(.is-static):hover .contact-go { color: var(--lime-500); }
 
 /* ---------- 15. FOOTER ---------- */
 .site-footer {
@@ -853,7 +818,6 @@ img.avatar::before { content: none; }
 /* ---------- 17. RESPONSIVE ---------- */
 @media (max-width: 1040px) {
   .about-grid { grid-template-columns: 1fr; }
-  .sponsor-cta { grid-template-columns: 1fr; }
   .brand-full { display: none; }
 }
 

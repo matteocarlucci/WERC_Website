@@ -40,9 +40,7 @@ Search `index.html` for `EDIT:` to find each one in context.
 - [ ] **Exec names, programs and emails** in the Team section — all eight are invented placeholders
 - [ ] **Stat numbers** in the hero (`data-count`) — members, events, partners, faculties
 - [ ] **Events** — dates, titles, rooms, prices, application deadlines
-- [ ] **Email addresses** — `hello@werc-uwo.ca`, `partnerships@…`, `members@…` and the per-exec addresses
-- [ ] **Instagram and LinkedIn URLs** — currently point at the bare homepages
-- [ ] **Sponsorship price** — the Sponsors section says packages start at $500
+- [ ] **Email addresses** — `partnerships@…`, `members@…` and the per-exec addresses
 - [ ] **Sponsor logos** — replace the dashed placeholder tiles
 - [ ] **Meta description and canonical URL** in `<head>`
 - [ ] **Footer wording** — confirm how the USC wants club affiliation described
