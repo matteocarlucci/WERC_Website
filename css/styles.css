@@ -629,6 +629,19 @@ p:last-child { margin-bottom: 0; }
 .event-empty { margin-top: 20px; color: var(--muted); }
 
 /* ---------- 11. TEAM ---------- */
+.team-group + .team-group { margin-top: 44px; }
+.team-group-title {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 18px;
+  font-size: .82rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.team-group-title::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+
 .team-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -663,7 +676,7 @@ p:last-child { margin-bottom: 0; }
 .avatar::before { content: attr(data-initials); }
 img.avatar::before { content: none; }
 
-.member h3 { font-size: 1.05rem; }
+.member h4 { font-size: 1.05rem; }
 .member .role {
   margin: 3px 0 0;
   font-family: var(--font-display);
@@ -672,7 +685,6 @@ img.avatar::before { content: none; }
   color: var(--sage-600);
 }
 :root[data-theme="dark"] .member .role { color: var(--lime-500); }
-.member .program { margin: 8px 0 0; font-size: .85rem; color: var(--muted); }
 .member-mail {
   margin-top: auto;
   padding-top: 14px;
@@ -854,6 +866,17 @@ img.avatar::before { content: none; }
 @media (max-width: 640px) {
   body { font-size: 16px; }
   .event { grid-template-columns: 62px 1fr; gap: 16px; align-items: start; }
+  /* 25 full-size team cards make a very long scroll; switch to compact rows. */
+  .team-grid { gap: 10px; }
+  .member {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 14px;
+    align-items: center;
+    padding: 14px 16px;
+  }
+  .avatar { grid-row: span 3; width: 46px; height: 46px; margin: 0; font-size: .9rem; }
+  .member-mail { margin-top: 0; padding-top: 6px; justify-self: start; }
   .event-date { padding: 8px 4px; }
   .event-date .day { font-size: 1.3rem; }
   .event-action { grid-column: 2; margin-top: 12px; }

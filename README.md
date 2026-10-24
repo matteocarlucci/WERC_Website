@@ -37,10 +37,8 @@ python3 -m http.server 8000     # then open http://localhost:8000
 The content is written to be plausible, not accurate. Every item below is a placeholder.
 Search `index.html` for `EDIT:` to find each one in context.
 
-- [ ] **Exec names, programs and emails** in the Team section — all eight are invented placeholders
 - [ ] **Stat numbers** in the hero (`data-count`) — members, events, partners, faculties
 - [ ] **Events** — dates, titles, rooms, prices, application deadlines
-- [ ] **Email addresses** — `partnerships@…`, `members@…` and the per-exec addresses
 - [ ] **Sponsor logos** — replace the dashed placeholder tiles
 - [ ] **Meta description and canonical URL** in `<head>`
 - [ ] **Footer wording** — confirm how the USC wants club affiliation described
@@ -83,15 +81,16 @@ Each event is one `<li>` in the `#events` list. Copy an existing block and chang
 
 ### Adding or changing an exec
 
+The Team section is split into groups (Presidents & VPs, Heads, Directors & Advisor).
+Each group is a `<div class="team-group">` with its own `team-grid`. Add a person by
+copying a card inside the right group:
+
 ```html
 <article class="member reveal">
   <span class="avatar" data-initials="AB" aria-hidden="true"></span>
-  <h3>Alex Bianchi</h3>
-  <p class="role">VP Finance</p>
-  <p class="program">HBA '28, Ivey Business School</p>
-  <a class="member-mail" href="mailto:finance@werc-uwo.ca"
-    >finance@werc-uwo.ca</a
-  >
+  <h4>Alex Bianchi</h4>
+  <p class="role">Head of Macro</p>
+  <a class="member-mail" href="mailto:abianchi@uwo.ca">abianchi@uwo.ca</a>
 </article>
 ```
 
