@@ -9,8 +9,7 @@
    05. Reveal-on-scroll
    06. Animated stat counters
    07. Event filtering
-   08. Member sign-up form
-   09. Footer year
+   08. Footer year
    ========================================================================== */
 (function () {
   'use strict';
@@ -224,68 +223,7 @@
 
   if (filters.length) applyFilter('upcoming');
 
-  /* ---------- 08. SIGN-UP FORM ----------
-     Ships in "mailto" mode: it opens the visitor's email client with the
-     answers filled in. To collect submissions properly, point the form at
-     Formspree / Google Forms — see README.md. */
-  var form = document.getElementById('joinForm');
-  var status = document.getElementById('formStatus');
-
-  function say(message, isError) {
-    if (!status) return;
-    status.textContent = message;
-    status.classList.toggle('is-error', !!isError);
-  }
-
-  if (form) {
-    form.addEventListener('submit', function (e) {
-      /* If the form has a real action, let the browser handle the POST. */
-      if (form.getAttribute('action')) return;
-      e.preventDefault();
-
-      var required = Array.prototype.slice.call(form.querySelectorAll('[required]'));
-      var firstBad = null;
-
-      required.forEach(function (input) {
-        var ok = input.checkValidity() && input.value.trim() !== '';
-        input.setAttribute('aria-invalid', String(!ok));
-        if (!ok && !firstBad) firstBad = input;
-      });
-
-      if (firstBad) {
-        say('Please complete the highlighted fields.', true);
-        firstBad.focus();
-        return;
-      }
-
-      var data = new FormData(form);
-      var interests = data.getAll('interest');
-      var lines = [
-        'Name: ' + data.get('name'),
-        'Email: ' + data.get('email'),
-        'Faculty: ' + data.get('faculty'),
-        'Year: ' + data.get('year'),
-        'Interests: ' + (interests.length ? interests.join(', ') : 'Not specified'),
-        '',
-        'Sent from the WERC website.'
-      ];
-
-      var to = form.getAttribute('data-mailto') || 'hello@werc-uwo.ca';
-      var href = 'mailto:' + to +
-        '?subject=' + encodeURIComponent('WERC membership sign-up — ' + data.get('name')) +
-        '&body=' + encodeURIComponent(lines.join('\n'));
-
-      window.location.href = href;
-      say('Opening your email app — press send to finish your sign-up.');
-    });
-
-    /* Clear the error state as soon as the visitor starts fixing a field. */
-    form.addEventListener('input', function (e) {
-      if (e.target.hasAttribute('aria-invalid')) e.target.setAttribute('aria-invalid', 'false');
-    });
-  }
-
-  /* ---------- 09. FOOTER YEAR ---------- */
+  /* ---------- 08. FOOTER YEAR ---------- */
   var yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = String(new Date().getFullYear());
 })();
