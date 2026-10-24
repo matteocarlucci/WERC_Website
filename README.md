@@ -7,7 +7,7 @@ Plain HTML, CSS and JavaScript — no build step, no dependencies to install.
 WERC-website/
 ├── index.html          all page content lives here
 ├── css/styles.css      all styling, organised in numbered sections
-├── js/main.js          nav, theme toggle, filters, form, animations
+├── js/main.js          nav, theme toggle, filters, animations
 ├── assets/
 │   ├── werc-logo.png              original logo (white background)
 │   ├── werc-logo-transparent.png  transparent background
@@ -42,13 +42,11 @@ Search `index.html` for `EDIT:` to find each one in context.
 - [ ] **Events** — dates, titles, rooms, prices, application deadlines
 - [ ] **Email addresses** — `hello@werc-uwo.ca`, `partnerships@…`, `members@…` and the per-exec addresses
 - [ ] **Instagram and LinkedIn URLs** — currently point at the bare homepages
-- [ ] **Membership fee** — the Join section says $15/year
 - [ ] **Sponsorship price** — the Sponsors section says packages start at $500
 - [ ] **Sponsor logos** — replace the dashed placeholder tiles
 - [ ] **Meta description and canonical URL** in `<head>`
 - [ ] **Footer wording** — confirm how the USC wants club affiliation described
 - [ ] **Land acknowledgment** — verify against Western's current official wording
-- [ ] **Connect the sign-up form** (see below) — right now it only opens an email draft
 
 ---
 
@@ -74,7 +72,7 @@ Each event is one `<li>` in the `#events` list. Copy an existing block and chang
     <p class="event-meta">6:00–7:30 PM · Building and room</p>
   </div>
   <div class="event-action">
-    <a class="btn btn-sm btn-primary" href="#join">Register</a>
+    <a class="btn btn-sm btn-primary" href="https://your-registration-link">Register</a>
   </div>
 </li>
 ```
@@ -140,39 +138,11 @@ highlighting picks it up automatically:
 
 ---
 
-## Connecting the sign-up form
+## Membership sign-up
 
-As shipped, the form validates the fields and then opens the visitor's email client with
-their answers pre-filled. That works, but it's clunky and some people have no mail client
-configured. Two better options:
-
-### Option A — Google Forms (free, easiest)
-
-1. Build the equivalent form in Google Forms.
-2. Click **Send → `< >`** and copy the `<iframe>` embed code.
-3. In `index.html`, delete the whole `<form class="join-form" …>…</form>` block and paste
-   the iframe in its place.
-
-Responses land in a Google Sheet. You lose the custom styling.
-
-### Option B — Formspree (free tier, keeps the styling)
-
-1. Create a form at [formspree.io](https://formspree.io) and copy your endpoint ID.
-2. Change the opening tag in `index.html` to:
-
-```html
-<form
-  class="join-form reveal"
-  id="joinForm"
-  action="https://formspree.io/f/YOUR_ID"
-  method="POST"
-></form>
-```
-
-3. Delete the `data-mailto="…"` attribute.
-
-`main.js` checks for an `action` attribute and steps out of the way when it finds one, so
-the browser submits normally. Submissions arrive by email and in the Formspree dashboard.
+Memberships are sold on Rubric. The **Join WERC** button in the header and both
+**Become a member** links (hero and footer) open WERC's Rubric membership page in a new tab.
+If the link changes, search `index.html` for `hellorubric` and update all three.
 
 ---
 

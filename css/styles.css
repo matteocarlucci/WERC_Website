@@ -14,7 +14,6 @@
    10. Events
    11. Team
    12. Sponsors
-   13. Join & form
    14. Contact
    15. Footer
    16. Reveal animations
@@ -747,110 +746,6 @@ img.avatar::before { content: none; }
 .sponsor-cta h3 { font-size: 1.4rem; }
 .sponsor-cta-action p { font-size: .94rem; color: var(--muted); margin-bottom: 18px; }
 
-/* ---------- 13. JOIN & FORM ---------- */
-.join-wrap {
-  display: grid;
-  grid-template-columns: 1fr minmax(340px, 460px);
-  gap: clamp(32px, 5vw, 72px);
-  align-items: start;
-}
-
-.steps { counter-reset: step; display: grid; gap: 22px; margin-top: 34px; }
-.steps li {
-  counter-increment: step;
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 4px 18px;
-  align-items: start;
-}
-.steps li::before {
-  content: counter(step);
-  grid-row: span 2;
-  display: grid;
-  place-items: center;
-  width: 34px; height: 34px;
-  border-radius: 50%;
-  border: 1.5px solid rgba(164, 200, 104, .5);
-  color: var(--lime-500);
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: .95rem;
-}
-.steps h3 { color: #fff; }
-.steps p { font-size: .94rem; color: rgba(237, 243, 233, .72); margin: 4px 0 0; }
-
-.join-form {
-  padding: clamp(24px, 3vw, 32px);
-  background: rgba(255, 255, 255, .06);
-  border: 1px solid rgba(255, 255, 255, .14);
-  border-radius: var(--r-xl);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-}
-.join-form > h3 { color: #fff; font-size: 1.25rem; margin-bottom: 20px; }
-
-.field { display: grid; gap: 7px; margin-bottom: 16px; border: 0; padding: 0; }
-.field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-.field label, .field legend {
-  font-size: .83rem;
-  font-weight: 600;
-  letter-spacing: .02em;
-  color: rgba(237, 243, 233, .9);
-  padding: 0;
-}
-.hint { font-weight: 400; color: rgba(237, 243, 233, .7); }
-
-.field input, .field select {
-  width: 100%;
-  padding: 11px 13px;
-  font: inherit;
-  font-size: .95rem;
-  color: #fff;
-  background: rgba(10, 20, 14, .42);
-  border: 1.5px solid rgba(255, 255, 255, .16);
-  border-radius: var(--r-sm);
-  transition: border-color .18s, background-color .18s;
-}
-.field input::placeholder { color: rgba(237, 243, 233, .42); }
-.field input:focus, .field select:focus {
-  outline: none;
-  border-color: var(--lime-500);
-  background: rgba(10, 20, 14, .6);
-}
-.field select option { color: #14211A; background: #fff; }
-.field input[aria-invalid="true"], .field select[aria-invalid="true"] { border-color: #E8907F; }
-
-.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 2px; }
-.chip { position: relative; }
-.chip input {
-  position: absolute;
-  opacity: 0;
-  width: 1px; height: 1px;
-}
-.chip span {
-  display: block;
-  padding: 8px 14px;
-  border: 1.5px solid rgba(255, 255, 255, .18);
-  border-radius: 999px;
-  font-size: .85rem;
-  color: rgba(237, 243, 233, .82);
-  cursor: pointer;
-  transition: background-color .18s, border-color .18s, color .18s;
-}
-.chip span:hover { border-color: rgba(164, 200, 104, .6); }
-.chip input:checked + span {
-  background: var(--lime-500);
-  border-color: var(--lime-500);
-  color: var(--forest-900);
-  font-weight: 600;
-}
-.chip input:focus-visible + span { outline: 2.5px solid var(--lime-500); outline-offset: 3px; }
-
-.join-form .btn-block { margin-top: 8px; }
-.form-status { margin: 14px 0 0; font-size: .89rem; min-height: 1.2em; color: var(--lime-500); font-weight: 500; }
-.form-status.is-error { color: #F3B0A2; }
-.form-fineprint { margin: 12px 0 0; font-size: .78rem; color: rgba(237, 243, 233, .72); }
-
 /* ---------- 14. CONTACT ---------- */
 .contact-grid {
   display: grid;
@@ -958,7 +853,6 @@ img.avatar::before { content: none; }
 /* ---------- 17. RESPONSIVE ---------- */
 @media (max-width: 1040px) {
   .about-grid { grid-template-columns: 1fr; }
-  .join-wrap { grid-template-columns: 1fr; }
   .sponsor-cta { grid-template-columns: 1fr; }
   .brand-full { display: none; }
 }
@@ -1000,7 +894,6 @@ img.avatar::before { content: none; }
   .event-date .day { font-size: 1.3rem; }
   .event-action { grid-column: 2; margin-top: 12px; }
   .footer-nav { grid-template-columns: 1fr 1fr; }
-  .field-row { grid-template-columns: 1fr; }
   .hero-actions .btn { flex: 1 1 100%; }
   .filter { padding: 8px 14px; font-size: .85rem; }
 
@@ -1019,7 +912,7 @@ img.avatar::before { content: none; }
 
 /* ---------- PRINT ---------- */
 @media print {
-  .site-header, .hero-bg, .join-form, .filter-bar, .icon-btn { display: none !important; }
+  .site-header, .hero-bg, .filter-bar, .icon-btn { display: none !important; }
   body { background: #fff; color: #000; }
   .reveal { opacity: 1 !important; transform: none !important; }
   .section { padding-block: 24px; page-break-inside: avoid; }

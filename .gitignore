@@ -1,0 +1,27 @@
+# Claude Code project settings (local to this computer)
+.claude/
+
+# macOS
+.DS_Store
+._*
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*~
+
+# Secrets and local config
+.env
+.env.*
+
+# Logs and temporary files
+*.log
+tmp/
+
+# Dependencies, if any are ever added
+node_modules/
