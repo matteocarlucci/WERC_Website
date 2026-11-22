@@ -39,7 +39,6 @@ Search `index.html` for `EDIT:` to find each one in context.
 
 - [ ] **Stat numbers** in the hero (`data-count`) — members, events, partners, faculties
 - [ ] **Events** — dates, titles, rooms, prices, application deadlines
-- [ ] **Sponsor logos** — replace the dashed placeholder tiles
 - [ ] **Meta description and canonical URL** in `<head>`
 - [ ] **Footer wording** — confirm how the USC wants club affiliation described
 - [ ] **Land acknowledgment** — verify against Western's current official wording
@@ -103,26 +102,13 @@ with an image — the styling is identical:
 
 Square crops around 300×300 px work best. Put them in `assets/team/`.
 
-### Adding a sponsor logo
+### Adding a sponsor
 
-Replace a placeholder tile:
-
-```html
-<!-- before -->
-<div class="sponsor-tile is-empty"><span>Sponsor logo</span></div>
-
-<!-- after -->
-<a
-  class="sponsor-tile"
-  href="https://sponsor.com"
-  target="_blank"
-  rel="noopener"
->
-  <img src="assets/sponsors/sponsor-name.svg" alt="Sponsor Name" />
-</a>
-```
-
-SVG or transparent PNG, ideally on a light background. Logos are capped at 54 px tall.
+Each sponsor is one `<article class="partner">` in the Sponsors section. Copy the YCR block,
+then change the links, name and description. Put the logo in `assets/sponsors/`. YCR has two
+versions: dark text for light mode (`mark-on-light`) and white text for dark mode
+(`mark-on-dark`). If a sponsor's logo works on both backgrounds, use one `<img>` without
+those classes.
 
 ### Adding a nav item
 
