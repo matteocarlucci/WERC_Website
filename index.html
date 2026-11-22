@@ -461,30 +461,21 @@
     </div>
 
     <!-- ============================================================
-         EDIT: replace each placeholder tile with a sponsor logo:
-         <a class="sponsor-tile" href="https://sponsor.com">
-           <img src="assets/sponsors/name.svg" alt="Sponsor name">
-         </a>
+         Each <article class="partner"> is one sponsor. Copy the block
+         to add another; logos live in assets/sponsors/.
          ============================================================ -->
-    <div class="sponsor-tier reveal" data-delay="2">
-      <h3 class="tier-label">Lead partners</h3>
-      <div class="sponsor-grid tier-lead">
-        <div class="sponsor-tile is-empty"><span>Sponsor logo</span></div>
-        <div class="sponsor-tile is-empty"><span>Sponsor logo</span></div>
-        <div class="sponsor-tile is-empty"><span>Sponsor logo</span></div>
-      </div>
-    </div>
-
-    <div class="sponsor-tier reveal" data-delay="3">
-      <h3 class="tier-label">Supporting partners</h3>
-      <div class="sponsor-grid">
-        <div class="sponsor-tile is-empty"><span>Sponsor logo</span></div>
-        <div class="sponsor-tile is-empty"><span>Sponsor logo</span></div>
-        <div class="sponsor-tile is-empty"><span>Sponsor logo</span></div>
-        <div class="sponsor-tile is-empty"><span>Sponsor logo</span></div>
-        <div class="sponsor-tile is-empty"><span>Sponsor logo</span></div>
-        <div class="sponsor-tile is-empty"><span>Sponsor logo</span></div>
-      </div>
+    <div class="partner-list">
+      <article class="partner reveal" data-delay="2">
+        <a class="partner-logo" href="https://youngcanadiansforresources.ca/" target="_blank" rel="noopener" aria-label="Young Canadians for Resources website">
+          <img class="mark-on-light" src="assets/sponsors/ycr-logo.svg" alt="" width="200" height="123">
+          <img class="mark-on-dark" src="assets/sponsors/ycr-logo-light.svg" alt="" width="200" height="123">
+        </a>
+        <div class="partner-copy">
+          <h3>Young Canadians for Resources</h3>
+          <p>A national, student-led organization helping young Canadians learn about the country&rsquo;s natural resources, speak up for the sector, and build careers in it.</p>
+          <a class="partner-link" href="https://youngcanadiansforresources.ca/" target="_blank" rel="noopener">Visit YCR <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
     </div>
   </div>
 </section>
