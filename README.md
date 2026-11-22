@@ -179,6 +179,11 @@ Then in the repo: **Settings → Pages → Source: `main` / root**. Live in abou
 Handing the repo to next year's exec means transferring the repo — worth putting it under a
 club GitHub organisation rather than a personal account.
 
+**After changing `styles.css` or `main.js`**, update the `?v=` date on their links near the
+top and bottom of `index.html` (for example `css/styles.css?v=2026-11-22`). GitHub Pages
+lets browsers keep old copies of these files for a while, so without a new `?v=` visitors can
+see the new page with the old styles.
+
 ### Netlify or Cloudflare Pages
 
 Drag the `WERC-website` folder onto [app.netlify.com/drop](https://app.netlify.com/drop).
