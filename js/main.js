@@ -210,18 +210,25 @@
     if (emptyMsg) emptyMsg.hidden = shown !== 0;
   }
 
-  filters.forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      filters.forEach(function (b) {
-        var active = b === btn;
-        b.classList.toggle('is-active', active);
-        b.setAttribute('aria-selected', String(active));
-      });
-      applyFilter(btn.getAttribute('data-filter'));
+  function selectFilter(btn) {
+    filters.forEach(function (b) {
+      var active = b === btn;
+      b.classList.toggle('is-active', active);
+      b.setAttribute('aria-selected', String(active));
     });
+    applyFilter(btn.getAttribute('data-filter'));
+  }
+
+  filters.forEach(function (btn) {
+    btn.addEventListener('click', function () { selectFilter(btn); });
   });
 
-  if (filters.length) applyFilter('upcoming');
+  /* Open on Upcoming, or on Past when nothing is scheduled yet. */
+  if (filters.length) {
+    var hasUpcoming = events.some(function (ev) { return ev.getAttribute('data-state') === 'upcoming'; });
+    var start = document.querySelector('.filter[data-filter="' + (hasUpcoming ? 'upcoming' : 'past') + '"]');
+    selectFilter(start || filters[0]);
+  }
 
   /* ---------- 08. FOOTER YEAR ---------- */
   var yearEl = document.getElementById('year');
