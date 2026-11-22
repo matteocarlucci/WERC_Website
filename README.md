@@ -39,6 +39,7 @@ Search `index.html` for `EDIT:` to find each one in context.
 
 - [ ] **Stat numbers** in the hero (`data-count`) — members, events, partners, faculties
 - [ ] **Events** — dates, titles, rooms, prices, application deadlines
+- [ ] **Sponsor logos** — replace the dashed placeholder tiles
 - [ ] **Meta description and canonical URL** in `<head>`
 - [ ] **Footer wording** — confirm how the USC wants club affiliation described
 - [ ] **Land acknowledgment** — verify against Western's current official wording
@@ -101,6 +102,27 @@ with an image — the styling is identical:
 ```
 
 Square crops around 300×300 px work best. Put them in `assets/team/`.
+
+### Adding a sponsor logo
+
+Replace a placeholder tile:
+
+```html
+<!-- before -->
+<div class="sponsor-tile is-empty"><span>Sponsor logo</span></div>
+
+<!-- after -->
+<a
+  class="sponsor-tile"
+  href="https://sponsor.com"
+  target="_blank"
+  rel="noopener"
+>
+  <img src="assets/sponsors/sponsor-name.svg" alt="Sponsor Name" />
+</a>
+```
+
+SVG or transparent PNG, ideally on a light background. Logos are capped at 54 px tall.
 
 ### Adding a nav item
 
