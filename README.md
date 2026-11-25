@@ -1,6 +1,6 @@
-# WERC — Western Energy and Resources Club
+# WERC — Western Energy and Resource Club
 
-A single-page website for the Western Energy and Resources Club at Western University.
+A single-page website for the Western Energy and Resource Club at Western University.
 Plain HTML, CSS and JavaScript — no build step, no dependencies to install.
 
 ```
