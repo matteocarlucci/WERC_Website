@@ -1,5 +1,5 @@
 /* ==========================================================================
-   WERC — Western Energy and Resources Club
+   WERC — Western Energy and Resource Club
    main.js — no dependencies, no build step.
 
    01. Theme (light / dark) with preference memory
